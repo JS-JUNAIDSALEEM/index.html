@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #nav a{
+    text-decoration: none;
+}
+
+#nav{
+    background-color: rgb(178, 190, 195);
+    padding: 10px;
+    border: 2px solid darkblue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.img_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+#img{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+}
+
+#container{
+    background-color: rgb(219, 232, 227);
+    margin-top: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+    width: 273px;
+}
+
+.box{
+    height: 72px;
+    width: 100px;
+    border: 1px solid black;
+    background-color: rgb(143, 139, 148);
+    text-align: center;
+    margin: 3px;
+    flex-shrink: 0;
+}
+
+#box2{
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#div{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(1, 252, 43);
+    margin-top: 10px;
+    text-align: center;
+}
+@media screen and (min-width: 300px) and (max-width: 400px){
+    #div{
+        background-color: red;
+    }
+}
+@media screen and (min-width: 400px){
+    #div{
+        background-color: blue;
+    }
+}
+
+</style>
+<body>
+    <nav id="nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+    </nav>
+    <div class="img_container">
+        <img src="./WhatsApp Image 2024-05-22 at 13.20.49_18d4a755.jpg" id="img" alt="Placeholder Image">
+    </div>
+
+    <div id="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box" id="box3">box3</div>
+    </div>
+
+    <div id="div">BOX</div>
+</body>
+</html>
